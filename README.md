@@ -1,28 +1,32 @@
-nome = input("Digite o seu nome: ")
+# Calculadora de IMC em Python
 
-try:
-    idade = int(input("Digite a sua idade: "))
-    altura = float(input("Digite a sua altura: "))
-    peso = float(input("Digite o seu peso: "))
+Aplicação simples em Python que calcula o Índice de Massa Corporal (IMC) e classifica o resultado com base em padrões de saúde.
 
-    if altura <= 0 or peso <= 0:
-        print("Altura e peso devem ser maiores que zero.")
-    else:
-        imc = peso / (altura ** 2)
+Este projeto foi desenvolvido como parte do meu aprendizado em programação, com foco em lógica, entrada de dados e tratamento de erros.
 
-        if imc < 18.5:
-            classificacao = "Abaixo do recomendado"
-        elif imc < 25:
-            classificacao = "Normal"
-        elif imc < 30:
-            classificacao = "Sobrepeso"
-        else:
-            classificacao = "Obesidade"
+---
 
-        print(f"\nNome: {nome}")
-        print(f"Idade: {idade}")
-        print(f"IMC: {imc:.2f}")
-        print(f"Classificação: {classificacao}")
+## 🚀 Por que esse projeto?
 
-except ValueError:
-    print("Erro: digite apenas números válidos para idade, peso e altura.")
+Este projeto tem como objetivo consolidar fundamentos importantes de programação, como:
+
+- manipulação de entrada do usuário
+- estruturas condicionais
+- tratamento de exceções
+- organização de código
+
+---
+
+## 📌 Funcionalidades
+
+- Entrada de nome, idade, peso e altura  
+- Cálculo automático do IMC  
+- Classificação do resultado  
+- Tratamento de erros  
+
+---
+
+## ▶️ Como executar
+
+```bash
+python main.py
